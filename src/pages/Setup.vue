@@ -63,7 +63,7 @@ export default {
 
         this.$root.getSocket().emit("needSetup", (needSetup) => {
             if (! needSetup) {
-                this.$router.push("/");
+                //this.$router.push("/");
             }
         });
     },
