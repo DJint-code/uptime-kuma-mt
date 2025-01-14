@@ -668,9 +668,9 @@ let needSetup = false;
                     throw new Error("Password is too weak. It should contain alphabetic and numeric characters. It must be at least 6 characters in length.");
                 }
 
-                if ((await R.knex("user").count("id as count").first()).count !== 0) {
-                    throw new Error("Uptime Kuma has been initialized. If you want to run setup again, please delete the database.");
-                }
+                // if ((await R.knex("user").count("id as count").first()).count !== 0) {
+                    // throw new Error("Uptime Kuma has been initialized. If you want to run setup again, please delete the database.");
+                // }
 
                 let user = R.dispense("user");
                 user.username = username;
